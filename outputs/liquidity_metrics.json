@@ -1,0 +1,32 @@
+{
+  "anchor_month": "2026-03",
+  "anchor_month_total_volume_usd": 5982831665.662275,
+  "total_18mo_combined_volume_usd": 37417052784.45035,
+  "current_month_market_concentration": {
+    "top_1_market_share": 0.012089747776281858,
+    "top_10_market_share": 0.05409175920655576,
+    "top_20_market_share": 0.07525177342285874,
+    "top_50_market_share": 0.11262948176440515,
+    "top_10_market_volume_usd": 323621889.83236074
+  },
+  "current_month_trader_concentration": {
+    "top_1_trader_share": 0.012280602783879395,
+    "top_10_trader_share": 0.06490118248442985,
+    "top_50_trader_share": 0.14358371733174372,
+    "top_100_trader_share": 0.1935530591457477,
+    "largest_wallet_volume_usd": 73472779.20881394
+  },
+  "eighteen_month_trader_concentration_ctf_only": {
+    "top_10_share_of_combined_18mo": 0.022462948221086992,
+    "top_100_share_of_combined_18mo": 0.07914368951368134,
+    "top_1000_share_of_combined_18mo": 0.19672372319132783
+  },
+  "long_term_wallets_n": 417,
+  "long_term_wallets_vol_share_of_top1k": 0.41717663053205195,
+  "narrative": [
+    "Top-10 markets = 5% of current-month volume. Long-tail market mix, not 10-markets-is-everything.",
+    "Top-100 traders = 19% of current-month volume. Broader participation than typical CLOB.",
+    "Largest single wallet = 1.2% of month. No single whale drives volume.",
+    "417 of top-1000 wallets span >=180 days: stable repeat-traders / market-makers."
+  ]
+}

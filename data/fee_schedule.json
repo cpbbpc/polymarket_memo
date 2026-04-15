@@ -1,0 +1,98 @@
+{
+    "_source": "https://docs.polymarket.com/trading/fees - verified April 14, 2026",
+    "_notes": [
+        "Peak fee rates are the maximum taker fee at p=0.50 (maximum uncertainty).",
+        "Actual fee = fee_rate * C * p * (1-p), where C = shares, p = price.",
+        "Makers ALWAYS pay zero. Fees only apply to takers.",
+        "Fees only apply to markets deployed AFTER activation date.",
+        "Geopolitics is permanently free.",
+        "US exchange (QCEX) uses a flat 0.30% taker / 0.20% maker rebate model.",
+        "Maker rebates: 20% for crypto, 25% for all other fee-bearing categories, 0 for geopolitics."
+    ],
+    "international_exchange": {
+        "fee_model": "dynamic_probability_based",
+        "fee_formula": "fee = fee_rate_bps/10000 * shares * price * (1 - price)",
+        "categories": {
+            "crypto": {
+                "peak_fee_rate_pct": 1.8,
+                "fee_rate_bps": 720,
+                "activation_date": "2026-01-15",
+                "maker_rebate_pct": 20,
+                "notes": "Includes 15-min and 5-min price markets. Highest rate. Lowest rebate (20%)."
+            },
+            "economics": {
+                "peak_fee_rate_pct": 1.5,
+                "fee_rate_bps": 600,
+                "activation_date": "2026-03-30",
+                "maker_rebate_pct": 25,
+                "notes": "Fed decisions, CPI, GDP markets."
+            },
+            "mentions": {
+                "peak_fee_rate_pct": 1.56,
+                "fee_rate_bps": 620,
+                "activation_date": "2026-03-30",
+                "maker_rebate_pct": 25,
+                "notes": "Will X say Y? markets."
+            },
+            "culture": {
+                "peak_fee_rate_pct": 1.25,
+                "fee_rate_bps": 500,
+                "activation_date": "2026-03-30",
+                "maker_rebate_pct": 25,
+                "notes": "Awards, entertainment, social."
+            },
+            "weather": {
+                "peak_fee_rate_pct": 1.25,
+                "fee_rate_bps": 500,
+                "activation_date": "2026-03-30",
+                "maker_rebate_pct": 25,
+                "notes": "Temperature, hurricane, climate markets."
+            },
+            "finance": {
+                "peak_fee_rate_pct": 1.0,
+                "fee_rate_bps": 400,
+                "activation_date": "2026-03-30",
+                "maker_rebate_pct": 25,
+                "notes": "Macro hedging, corporate events, structured exposures."
+            },
+            "politics": {
+                "peak_fee_rate_pct": 1.0,
+                "fee_rate_bps": 400,
+                "activation_date": "2026-03-30",
+                "maker_rebate_pct": 25,
+                "notes": "Elections, policy, government actions."
+            },
+            "tech": {
+                "peak_fee_rate_pct": 1.0,
+                "fee_rate_bps": 400,
+                "activation_date": "2026-03-30",
+                "maker_rebate_pct": 25,
+                "notes": "AI model releases, product launches."
+            },
+            "sports": {
+                "peak_fee_rate_pct": 0.75,
+                "fee_rate_bps": 300,
+                "activation_date": "2026-02-18",
+                "maker_rebate_pct": 25,
+                "notes": "Lowest fee-bearing category. NFL, NBA, MLB, EPL etc."
+            },
+            "geopolitics": {
+                "peak_fee_rate_pct": 0.0,
+                "fee_rate_bps": 0,
+                "activation_date": null,
+                "maker_rebate_pct": 0,
+                "notes": "PERMANENTLY FREE. Wars, sanctions, international relations."
+            }
+        }
+    },
+    "us_exchange": {
+        "fee_model": "flat_rate",
+        "taker_fee_pct": 0.3,
+        "maker_rebate_pct": 0.2,
+        "activation_date": "2025-12-01",
+        "notes": "Via QCEX. Invite-only as of April 2026. Sports only currently.",
+        "categories_available": [
+            "sports"
+        ]
+    }
+}

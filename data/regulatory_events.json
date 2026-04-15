@@ -1,0 +1,473 @@
+{
+  "description": "Base-rate dataset of regulatory actions against prediction markets, sports-betting exchanges, and CFTC-adjacent DCMs. Curated for relevance to Polymarket's risk profile. Category-error cases (FTX fraud, Binance AML) excluded deliberately - those shape a different base rate.",
+  "relevance_tags": {
+    "high": "Same business model (event-contract / prediction market / sports DCM) operating under same/similar US regulatory regime",
+    "medium": "Similar retail derivatives / crypto exchange under US regulatory scrutiny",
+    "low": "Tangential - included for context, not base-rate counting"
+  },
+  "outcomes": {
+    "shutdown_us": "Forced to cease US operations; users geofenced or platform sunset",
+    "shutdown_global": "Full wind-down",
+    "fine_and_continue": "Monetary penalty, operations continue substantially unchanged",
+    "geofence_and_continue": "US partially blocked; product continues elsewhere or with restrictions",
+    "acquired": "Sold to regulated entity before resolution",
+    "no_action": "Investigation closed without enforcement",
+    "restructured": "Forced to obtain license / change corporate structure; operations continue under new regime",
+    "ongoing": "Matter pending, no final outcome"
+  },
+  "events": [
+    {
+      "entity": "Intrade",
+      "year": 2012,
+      "regulator": "CFTC",
+      "category": "prediction_market",
+      "action": "civil_complaint + cease_and_desist",
+      "outcome": "shutdown_us",
+      "relevance": "high",
+      "notes": "Closest direct analogue. Non-US-regulated event contracts marketed to US retail; CFTC alleged illegal off-exchange binary options. US users cut off; company wound down 2013 due to related financial issues.",
+      "source": "https://www.cftc.gov/PressRoom/PressReleases/6423-12"
+    },
+    {
+      "entity": "PredictIt",
+      "year": 2022,
+      "regulator": "CFTC",
+      "category": "prediction_market",
+      "action": "no_action_letter_rescinded",
+      "outcome": "ongoing",
+      "relevance": "high",
+      "notes": "CFTC rescinded 2014 no-action letter; Victoria University of Wellington / Aristotle forced to wind down. Ongoing federal litigation reinstated operations while case proceeds. Direct signal on CFTC willingness to close prediction markets even with prior permissive guidance.",
+      "source": "https://www.cftc.gov/PressRoom/PressReleases/8572-22"
+    },
+    {
+      "entity": "Kalshi",
+      "year": 2024,
+      "regulator": "CFTC",
+      "category": "prediction_market",
+      "action": "congressional_contracts_prohibition_order",
+      "outcome": "restructured",
+      "relevance": "high",
+      "notes": "CFTC moved to prohibit congressional election contracts; Kalshi prevailed at DC Circuit (Sept 2024) allowing listing. Establishes case law that event contracts can't be categorically blocked. Key precedent for Polymarket if it pursues CFTC-regulated venue.",
+      "source": "KalshiEX LLC v. CFTC, D.D.C. Case 1:23-cv-03257"
+    },
+    {
+      "entity": "Polymarket",
+      "year": 2022,
+      "regulator": "CFTC",
+      "category": "prediction_market",
+      "action": "settled_charges",
+      "outcome": "fine_and_continue",
+      "relevance": "high",
+      "notes": "$1.4M settlement. Required to geoblock US users from non-registered contracts but permitted to continue non-US operations. Established US-geofenced model Polymarket still uses.",
+      "source": "https://www.cftc.gov/PressRoom/PressReleases/8478-22"
+    },
+    {
+      "entity": "Polymarket",
+      "year": 2025,
+      "regulator": "Multiple state AGs",
+      "category": "prediction_market",
+      "action": "cease_and_desist_letters",
+      "outcome": "geofence_and_continue",
+      "relevance": "high",
+      "notes": "12+ states (NJ, NV, IL, MI, MD, OH, TX, CO, AZ others) sent cease-and-desist regarding sports markets. Polymarket geofenced affected states individually; US non-sports remained available via QCEX path. Ongoing.",
+      "source": "Multiple state AG press releases 2025"
+    },
+    {
+      "entity": "Polymarket",
+      "year": 2026,
+      "regulator": "Arizona AG",
+      "category": "prediction_market",
+      "action": "criminal_charges",
+      "outcome": "ongoing",
+      "relevance": "high",
+      "notes": "Arizona filed criminal charges against Polymarket operators under state unlawful-gambling statutes. First criminal case against a prediction market in the modern era. Key escalation indicator. Outcome pending.",
+      "source": "Arizona v. Polymarket Labs, 2026"
+    },
+    {
+      "entity": "ErisX (Eris Exchange)",
+      "year": 2019,
+      "regulator": "CFTC",
+      "category": "DCM",
+      "action": "DCM_registration_granted",
+      "outcome": "no_action",
+      "relevance": "medium",
+      "notes": "Approved as a CFTC DCM. Shows the regulated path works for sports/event products - now the model Polymarket aims for via QCEX.",
+      "source": "CFTC DCM order 2019"
+    },
+    {
+      "entity": "CFTC vs KalshiEX (election contracts)",
+      "year": 2024,
+      "regulator": "CFTC / DC Circuit",
+      "category": "prediction_market",
+      "action": "appellate_ruling_against_CFTC",
+      "outcome": "restructured",
+      "relevance": "high",
+      "notes": "CFTC's attempt to block election contracts defeated on appeal. Pending Supreme Court cert consideration. Major precedent limiting CFTC's categorical-ban authority.",
+      "source": "KalshiEX LLC v. CFTC, D.C. Cir. 2024"
+    },
+    {
+      "entity": "FanDuel (Fanball sports prediction)",
+      "year": 2018,
+      "regulator": "NJ/NY state",
+      "category": "sports_fantasy",
+      "action": "state_regulatory_action",
+      "outcome": "restructured",
+      "relevance": "medium",
+      "notes": "DFS model survived via licensing; illustrates state-by-state licensing pathway for sports-contingent products. Not a shutdown outcome but shows state regulator aggressiveness."
+    },
+    {
+      "entity": "DraftKings Nevada (launch blocked)",
+      "year": 2015,
+      "regulator": "Nevada Gaming",
+      "category": "sports_fantasy",
+      "action": "injunction",
+      "outcome": "geofence_and_continue",
+      "relevance": "medium",
+      "notes": "DFS operators required to obtain Nevada gaming license; DK/FanDuel geofenced NV. Precedent for operator continuing in 49 states while one state forces shutdown."
+    },
+    {
+      "entity": "BetOnline / Bovada (offshore)",
+      "year": "2016-ongoing",
+      "regulator": "Various state AGs + DOJ",
+      "category": "offshore_sportsbook",
+      "action": "cease_and_desist + payment_processor_pressure",
+      "outcome": "geofence_and_continue",
+      "relevance": "medium",
+      "notes": "Offshore sportsbooks served as the counterfactual market. Operated under pressure; payment rails occasionally disrupted; substantially continued US service. Shows the floor even under adversarial enforcement."
+    },
+    {
+      "entity": "ProphetX",
+      "year": 2024,
+      "regulator": "Multiple states",
+      "category": "peer_to_peer_sports",
+      "action": "state_licensing_requirements",
+      "outcome": "restructured",
+      "relevance": "medium",
+      "notes": "P2P sports exchange pursuing state-by-state sports-wagering licenses. Slower scale, compliant model. Contrasts with Polymarket's CFTC-route ambition."
+    },
+    {
+      "entity": "Opinion (polymarket-adjacent token)",
+      "year": 2024,
+      "regulator": "N/A (market failure, not regulatory)",
+      "category": "prediction_market_token",
+      "action": "token_launch_collapse",
+      "outcome": "shutdown_global",
+      "relevance": "low",
+      "notes": "Not a regulatory event; included for token-reflexivity reference. Ticker OPINION saw ~95% drawdown post-TGE; operator entity effectively discontinued. Cited as single-datapoint basis for token-failure risk."
+    },
+    {
+      "entity": "dYdX v3 US geoblock",
+      "year": 2022,
+      "regulator": "CFTC (de facto)",
+      "category": "perp_DEX",
+      "action": "voluntary_US_geoblock",
+      "outcome": "geofence_and_continue",
+      "relevance": "medium",
+      "notes": "Preemptive geoblock before formal action; structural template Polymarket follows for non-US operations while pursuing regulated US subsidiary."
+    },
+    {
+      "entity": "LedgerX",
+      "year": 2022,
+      "regulator": "CFTC",
+      "category": "DCM",
+      "action": "DCM_operates_under_FTX_collapse",
+      "outcome": "acquired",
+      "relevance": "medium",
+      "notes": "CFTC-registered DCM survived FTX parent collapse via bankruptcy sale to MIAX. Precedent that DCM registration has standalone value even under adverse parent events. Relevant for QCEX asset protection."
+    },
+    {
+      "entity": "Nadex / North American Derivatives Exchange",
+      "year": "2014-ongoing",
+      "regulator": "CFTC",
+      "category": "DCM_event_contracts",
+      "action": "registered_DCM_operating",
+      "outcome": "no_action",
+      "relevance": "high",
+      "notes": "Operating CFTC-registered DCM offering binary event contracts for over a decade. Baseline proof point that the DCM route for event contracts functions stably."
+    },
+    {
+      "entity": "BetOpenly (UK prediction market)",
+      "year": 2023,
+      "regulator": "UK Gambling Commission",
+      "category": "prediction_market",
+      "action": "licensing",
+      "outcome": "restructured",
+      "relevance": "low",
+      "notes": "UK jurisdictional analogue - licensed under gambling regime rather than securities. Illustrates alternative regulatory model. Included for international context."
+    },
+    {
+      "entity": "Iowa Electronic Markets (IEM)",
+      "year": 1993,
+      "regulator": "CFTC",
+      "category": "prediction_market",
+      "action": "no_action_letter",
+      "outcome": "no_action",
+      "relevance": "high",
+      "notes": "CFTC granted academic no-action relief to University of Iowa for real-money political prediction markets in 1992/1993 (refined 1993). Continuously operating under that letter for 30+ years without enforcement. Strongest single base-rate anchor for 'CFTC tolerates prediction markets under constrained structure'.",
+      "source": "CFTC No-Action Letter to University of Iowa (1993)"
+    },
+    {
+      "entity": "Hedgestreet / Nadex predecessor",
+      "year": 2004,
+      "regulator": "CFTC",
+      "category": "DCM_event_contracts",
+      "action": "DCM_registration_granted_then_acquired",
+      "outcome": "acquired",
+      "relevance": "high",
+      "notes": "First CFTC-registered DCM for binary event contracts (2004). Acquired by IG Group in 2007 and rebranded Nadex. Shows DCM-registration pathway produces durable, acquirable regulated-venue asset - the template Polymarket's QCEX deal relies on.",
+      "source": "CFTC DCM order 2004; IG Group press release 2007"
+    },
+    {
+      "entity": "Augur (v1/v2 decentralised prediction market)",
+      "year": 2020,
+      "regulator": "CFTC (implicit)",
+      "category": "prediction_market",
+      "action": "voluntary_geoblock_front_end",
+      "outcome": "geofence_and_continue",
+      "relevance": "high",
+      "notes": "Forecast Foundation deployed geoblocked front-end to avoid CFTC exposure after CFTC 2019 guidance implied binary event contracts on unregistered venues were illegal. Protocol continues; mainstream UX effectively dead. Informs the 'geofence as floor' outcome probability.",
+      "source": "Forecast Foundation statements 2020; CFTC 2019 interpretive guidance"
+    },
+    {
+      "entity": "Polymarket (DOJ investigation closed)",
+      "year": 2025,
+      "regulator": "DOJ (SDNY) / FBI",
+      "category": "prediction_market",
+      "action": "investigation_closed_no_charges",
+      "outcome": "no_action",
+      "relevance": "high",
+      "notes": "Nov 2024 FBI search of Shayne Coplan's apartment related to 2022 CFTC settlement compliance; DOJ declined to bring charges in 2025. Highest-profile federal criminal investigation of Polymarket concluded without action. Relevant favourable signal; note Polymarket-on-Polymarket tautology caveat.",
+      "source": "Public reporting (Bloomberg, WSJ) 2024-2025"
+    },
+    {
+      "entity": "DraftKings / FanDuel - NY AG DFS C&D (2015)",
+      "year": 2015,
+      "regulator": "NY Attorney General",
+      "category": "sports_fantasy",
+      "action": "cease_and_desist + settlement",
+      "outcome": "restructured",
+      "relevance": "medium",
+      "notes": "NY AG Schneiderman issued C&Ds declaring DFS illegal gambling; operators initially geoblocked NY, then legislature passed DFS-licensing statute (2016) and operators resumed under license. Paradigmatic 'state forces licensing, product continues' path.",
+      "source": "People v. FanDuel Inc., NY Sup. Ct. 2015; NY S8153 (2016)"
+    },
+    {
+      "entity": "DraftKings / FanDuel - Texas AG opinion (2016)",
+      "year": 2016,
+      "regulator": "Texas Attorney General",
+      "category": "sports_fantasy",
+      "action": "AG_opinion_DFS_is_gambling",
+      "outcome": "geofence_and_continue",
+      "relevance": "medium",
+      "notes": "TX AG Paxton issued opinion that paid DFS constitutes illegal gambling; DK/FD withdrew from Texas. State remained closed as of 2026. Exemplar of 'state closes, operator continues in other states' outcome - directly relevant to Polymarket's state-by-state geofence pattern.",
+      "source": "Texas AG Opinion KP-0057 (2016)"
+    },
+    {
+      "entity": "DraftKings / FanDuel - Illinois AG opinion (2015)",
+      "year": 2015,
+      "regulator": "Illinois Attorney General",
+      "category": "sports_fantasy",
+      "action": "AG_opinion + subsequent_licensing",
+      "outcome": "restructured",
+      "relevance": "medium",
+      "notes": "IL AG Madigan opined DFS is illegal gambling (Dec 2015); operators paused, then Illinois Fantasy Contests Act (2019) legalised under licensing. Same restructuring pathway as NY.",
+      "source": "Illinois AG Opinion 15-006 (2015); IL HB3411 (2019)"
+    },
+    {
+      "entity": "DraftKings / FanDuel - Massachusetts DFS regulations (2016)",
+      "year": 2016,
+      "regulator": "Massachusetts AG / Gaming Commission",
+      "category": "sports_fantasy",
+      "action": "consumer_protection_regulations",
+      "outcome": "restructured",
+      "relevance": "medium",
+      "notes": "MA AG Healey issued regulations requiring age limits, disclosure, marketing restrictions rather than outright ban. DK/FD complied and continued. Shows lower-friction state restructuring outcome.",
+      "source": "940 CMR 34.00 (2016)"
+    },
+    {
+      "entity": "New Jersey sports betting post-PASPA (2018)",
+      "year": 2018,
+      "regulator": "NJ Division of Gaming Enforcement",
+      "category": "sports_betting",
+      "action": "state_licensing_regime_launched",
+      "outcome": "restructured",
+      "relevance": "medium",
+      "notes": "Murphy v. NCAA (2018) struck PASPA; NJ launched licensed sports betting within weeks. Template for the state-by-state sports legalisation wave. Favourable-restructuring outcome at scale.",
+      "source": "Murphy v. NCAA, 138 S. Ct. 1461 (2018); NJ A4111 (2018)"
+    },
+    {
+      "entity": "New York online sports betting (2022)",
+      "year": 2022,
+      "regulator": "NY State Gaming Commission",
+      "category": "sports_betting",
+      "action": "licensed_mobile_sports_betting_launch",
+      "outcome": "restructured",
+      "relevance": "medium",
+      "notes": "NY launched mobile sports betting under 51% tax rate. High-friction licensing but operationally open. Relevant as 'regulated but punitive economics' outcome - a Base-world variant.",
+      "source": "NY Const. Amendment 2013; NY SB 6615 (2021)"
+    },
+    {
+      "entity": "California Prop 27 (online sports betting ballot) failure (2022)",
+      "year": 2022,
+      "regulator": "California voters",
+      "category": "sports_betting",
+      "action": "ballot_initiative_defeated",
+      "outcome": "shutdown_us",
+      "relevance": "medium",
+      "notes": "Prop 27 to legalise online sports betting defeated 82-18. California mobile sports betting remains closed through 2026. Largest single-state 'closed' outcome for the category - adverse-pathway analogue.",
+      "source": "CA SOS certified results Nov 2022"
+    },
+    {
+      "entity": "Florida Seminole compact resumption (2023)",
+      "year": 2023,
+      "regulator": "Florida / federal courts / DOI",
+      "category": "sports_betting",
+      "action": "tribal_compact_upheld_on_appeal",
+      "outcome": "restructured",
+      "relevance": "medium",
+      "notes": "2021 Seminole compact (giving tribe online sports betting monopoly) was enjoined then upheld on appeal (West Flagler v. Haaland, D.C. Cir. 2023). Cert denied 2023. Illustrates multi-year litigation to favourable restructuring outcome.",
+      "source": "West Flagler Assocs. v. Haaland, 71 F.4th 1059 (D.C. Cir. 2023)"
+    },
+    {
+      "entity": "Kraken - SEC staking settlement (2023)",
+      "year": 2023,
+      "regulator": "SEC",
+      "category": "crypto_exchange",
+      "action": "settled_charges",
+      "outcome": "fine_and_continue",
+      "relevance": "medium",
+      "notes": "$30M settlement; Kraken discontinued US staking product but continued trading operations. Adjacent-regime base-rate input on 'fine + product-scope curtailment, core business continues'.",
+      "source": "SEC Press Release 2023-25"
+    },
+    {
+      "entity": "BitMEX - CFTC/FinCEN settlement (2020/2021)",
+      "year": 2020,
+      "regulator": "CFTC + FinCEN + DOJ",
+      "category": "crypto_derivatives",
+      "action": "civil_penalty + criminal_plea_executives",
+      "outcome": "fine_and_continue",
+      "relevance": "medium",
+      "notes": "$100M CFTC/FinCEN civil penalty; founders pleaded to BSA violations (probation, no prison for core founders). Exchange geofenced US, continued global operations. Closest crypto-derivatives analogue to Polymarket's CFTC posture.",
+      "source": "CFTC Press Release 8412-21; SDNY U.S. v. Hayes et al."
+    },
+    {
+      "entity": "BlockFi - SEC settlement (2022)",
+      "year": 2022,
+      "regulator": "SEC + state securities regulators",
+      "category": "crypto_lending",
+      "action": "settled_registration_charges",
+      "outcome": "restructured",
+      "relevance": "low",
+      "notes": "$100M settlement requiring registration of lending product; BlockFi subsequently failed (2022) for FTX-exposure reasons, not the SEC matter. Tagged low-relevance because the lending-product regime differs substantially from event contracts; retained for base-rate context.",
+      "source": "SEC Press Release 2022-26"
+    },
+    {
+      "entity": "Coinbase - SEC v. Coinbase (2023-2025)",
+      "year": 2025,
+      "regulator": "SEC",
+      "category": "crypto_exchange",
+      "action": "enforcement_action_dismissed",
+      "outcome": "no_action",
+      "relevance": "medium",
+      "notes": "SEC sued Coinbase June 2023 alleging unregistered exchange operation; SEC voluntarily dismissed Feb 2025 under new administration. Classified no_action on final-outcome basis. Adjacent-regime signal on enforcement reversibility.",
+      "source": "SEC v. Coinbase, S.D.N.Y. Case 1:23-cv-04738 (dismissed Feb 2025)"
+    },
+    {
+      "entity": "OKX - DOJ/FinCEN settlement (2025)",
+      "year": 2025,
+      "regulator": "DOJ + FinCEN",
+      "category": "crypto_exchange",
+      "action": "settled_criminal_charges + civil_penalty",
+      "outcome": "fine_and_continue",
+      "relevance": "medium",
+      "notes": "$505M settlement (forfeiture + penalty) for unlicensed money transmission; OKX continued global operations and announced US re-entry plans. Recent data point on crypto-exchange fine-and-continue pathway.",
+      "source": "DOJ Press Release Feb 24 2025"
+    },
+    {
+      "entity": "Bitfinex / Tether - CFTC settlement (2021)",
+      "year": 2021,
+      "regulator": "CFTC",
+      "category": "crypto_exchange",
+      "action": "civil_penalty",
+      "outcome": "fine_and_continue",
+      "relevance": "low",
+      "notes": "$42.5M combined CFTC settlement over stablecoin reserve misrepresentations and illegal retail off-exchange commodity transactions. Operations continued. Low-relevance - business model differs - included for completeness.",
+      "source": "CFTC Press Release 8450-21"
+    },
+    {
+      "entity": "Polymarket - EU MiFID / CySEC licensing path",
+      "year": 2025,
+      "regulator": "EU national regulators",
+      "category": "prediction_market",
+      "action": "licensing_pursued",
+      "outcome": "restructured",
+      "relevance": "low",
+      "notes": "Polymarket pursuing EU licensing for regulated euro-denominated product. International context; not a US base-rate input.",
+      "source": "Company disclosures 2025"
+    },
+    {
+      "entity": "Cantor Exchange - box-office receipt futures",
+      "year": 2010,
+      "regulator": "CFTC + US Congress",
+      "category": "DCM_event_contracts",
+      "action": "CFTC_DCM_approval_then_legislative_ban",
+      "outcome": "shutdown_us",
+      "relevance": "high",
+      "notes": "CFTC approved Cantor Futures Exchange to list motion-picture box-office receipt contracts in April 2010. MPAA lobbied Congress; Dodd-Frank §721(c) (enacted July 2010) specifically banned 'motion picture box office receipts or any index, measure, value, or data related to such receipts' from DCM listing. Only clean precedent of a CFTC-approved event-contract product killed by targeted federal legislation. Cuts against the assumption that a favourable CFTC posture is durable against political intervention.",
+      "source": "CFTC DCM order April 2010; Pub. L. 111-203 §721(c) (2010)"
+    },
+    {
+      "entity": "Media Derivatives Inc. (MDEX) - movie futures",
+      "year": 2010,
+      "regulator": "CFTC + US Congress",
+      "category": "DCM_event_contracts",
+      "action": "CFTC_DCM_approval_then_legislative_ban",
+      "outcome": "shutdown_us",
+      "relevance": "high",
+      "notes": "Parallel CFTC approval to Cantor in April 2010 for box-office receipt contracts; killed by the same Dodd-Frank §721(c) clause three months later. Counted as a distinct data point because the DCM entity was separate, though the causal event is identical to Cantor.",
+      "source": "CFTC DCM order April 2010; Pub. L. 111-203 §721(c) (2010)"
+    },
+    {
+      "entity": "Kalshi - sports event contracts / state AG wave",
+      "year": 2025,
+      "regulator": "Multiple state gaming regulators + federal courts",
+      "category": "prediction_market",
+      "action": "state_cease_and_desists + federal_preliminary_injunctions",
+      "outcome": "ongoing",
+      "relevance": "high",
+      "notes": "Kalshi launched Super Bowl / NCAA / NFL event contracts in early 2025 under its CFTC DCM registration. NJ, NV, MD, MT, OH and others issued cease-and-desists asserting state gaming jurisdiction. Kalshi sued and won preliminary injunctions in NJ (D.N.J. 2025) and NV (D. Nev. 2025) on federal-preemption grounds. Direct parallel to Polymarket's state AG matter and the single most decision-relevant ongoing case; favourable interim signal but unresolved on the merits.",
+      "source": "KalshiEX LLC v. Flaherty, D.N.J. 2025; KalshiEX LLC v. Hendrick, D. Nev. 2025"
+    },
+    {
+      "entity": "ForecastEx (Interactive Brokers)",
+      "year": 2024,
+      "regulator": "CFTC",
+      "category": "DCM_event_contracts",
+      "action": "DCM_registration_granted + operating",
+      "outcome": "no_action",
+      "relevance": "high",
+      "notes": "CFTC-registered DCM for event contracts launched mid-2024 as Interactive Brokers subsidiary; operating without enforcement action. Additional evidence that the DCM-registration pathway for event contracts is open and being used by regulated incumbents, the same route Polymarket's QCEX deal targets.",
+      "source": "CFTC DCM order 2024; IBKR disclosures"
+    },
+    {
+      "entity": "CX Futures Exchange (Cantor successor)",
+      "year": "2011-ongoing",
+      "regulator": "CFTC",
+      "category": "DCM_event_contracts",
+      "action": "DCM_registration_retained_post_box_office_ban",
+      "outcome": "no_action",
+      "relevance": "high",
+      "notes": "Cantor rebranded its DCM as CX Futures Exchange after the 2010 box-office-receipt ban and has operated continuously as a CFTC-registered DCM since, at low volume. Evidence that DCM registration is durable even when a parent product is extinguished by federal action - the entity-level licence survives the product-level shutdown.",
+      "source": "CFTC DCM registry; Cantor disclosures"
+    },
+    {
+      "entity": "Binance.US - CFTC/SEC actions (2023)",
+      "year": 2023,
+      "regulator": "CFTC + SEC + DOJ",
+      "category": "crypto_exchange",
+      "action": "multi_agency_settlements",
+      "outcome": "fine_and_continue",
+      "relevance": "low",
+      "notes": "$4.3B DOJ/CFTC settlement (global Binance); Binance.US continued under US compliance monitor. Tagged low-relevance - AML-centric conduct rather than product-regime dispute. Retained for base-rate completeness.",
+      "source": "DOJ Press Release Nov 21 2023"
+    }
+  ]
+}

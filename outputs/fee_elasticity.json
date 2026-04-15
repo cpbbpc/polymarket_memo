@@ -1,0 +1,48 @@
+{
+  "events": [
+    {
+      "category": "crypto",
+      "activation_date": "2026-01-15",
+      "pre_month": "2025-12",
+      "post_month": "2026-01",
+      "volume_pre_usdc": 2868614467.7014375,
+      "volume_post_usdc": 4274628403.2224097,
+      "volume_mom_change_pct": 49.013694637313286,
+      "mau_pre": 499837,
+      "mau_post": 615026,
+      "mau_mom_change_pct": 23.045312771963665,
+      "fees_post_usd": 4418427.2564295605
+    },
+    {
+      "category": "sports",
+      "activation_date": "2026-02-18",
+      "pre_month": "2026-01",
+      "post_month": "2026-02",
+      "volume_pre_usdc": 4274628403.2224097,
+      "volume_post_usdc": 4493045695.685921,
+      "volume_mom_change_pct": 5.1096205765829295,
+      "mau_pre": 615026,
+      "mau_post": 638579,
+      "mau_mom_change_pct": 3.829594196017738,
+      "fees_post_usd": 8264583.971686512
+    },
+    {
+      "category": "other",
+      "activation_date": "2026-03-30",
+      "pre_month": "2026-02",
+      "post_month": "2026-03",
+      "volume_pre_usdc": 4493045695.685921,
+      "volume_post_usdc": 5982831665.662275,
+      "volume_mom_change_pct": 33.15759667004499,
+      "mau_pre": 638579,
+      "mau_post": 746927,
+      "mau_mom_change_pct": 16.967047146868275,
+      "fees_post_usd": 16947419.12487352
+    }
+  ],
+  "interpretation": {
+    "method": "Aggregate MoM changes in volume, MAU, and fees around each category fee activation. Per-market cohort analysis is structurally impossible because Polymarket sets fees at market registration, not retroactively \u2014 no market experienced both states.",
+    "signal": "Zero month-over-month decline in volume or MAU around any of the three activations.",
+    "implication": "The fee-attrition concern is empirically unsupported at the aggregate level. Any attrition on specific cohorts is masked (or offset) by continued aggregate growth."
+  }
+}

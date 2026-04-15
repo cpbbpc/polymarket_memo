@@ -1,0 +1,80 @@
+{
+    "_last_updated": "2026-04-11",
+
+    "global_sports_betting": {
+        "2024_market_size_usd": 101000000000,
+        "2025_market_size_usd": 112000000000,
+        "2030_projected_usd": 187000000000,
+        "2034_projected_usd": 226000000000,
+        "cagr_pct": 8.1,
+        "online_pct_of_total": 67.5,
+        "source": "Grand View Research, IMARC Group"
+    },
+
+    "global_online_gambling": {
+        "2026_market_size_usd": 117000000000,
+        "2033_projected_usd": 247000000000,
+        "cagr_pct": 11.3,
+        "sports_betting_share_pct": 31.6,
+        "north_america_share_pct": 38.7,
+        "mobile_share_pct": 58.3,
+        "source": "Coherent Market Insights"
+    },
+
+    "prediction_markets_actual": {
+        "_source": "Keyrock x Dune, 'Prediction Markets: The Next Frontier of Financial Markets' (primary report, in-repo PDF, §2)",
+        "2024_total_volume_usd": 9000000000,
+        "2024_early_monthly_volume_usd": 100000000,
+        "2025_ytd_jan_to_nov_total_volume_usd": 44000000000,
+        "2025_ytd_polymarket_volume_usd": 21500000000,
+        "2025_ytd_kalshi_volume_usd": 17100000000,
+        "2025_ytd_polymarket_share_pct": 49,
+        "2025_ytd_kalshi_share_pct": 39,
+        "2025_nov_monthly_volume_usd": 13000000000,
+        "2025_nov_annualised_runrate_usd": 156000000000,
+        "growth_multiple_early2024_to_nov2025": "130x",
+        "mau_growth_early2024_to_nov2025": "150x (4k -> 612k)",
+        "transactions_growth_early2024_to_nov2025": "180x (240k -> 43M monthly)",
+        "polymarket_2025_category_mix_pct": {"sports": 39, "politics": 34, "crypto": 18, "other": 9},
+        "kalshi_2025_category_mix_pct": {"sports": 85, "crypto": 4, "economics": 3, "politics": 3, "other": 5},
+        "fastest_growing_2025_ytd": {"economics_pct": 905, "economics_vol_usd": 112000000, "tech_science_pct": 1637, "tech_science_vol_usd": 123000000}
+    },
+
+    "prediction_markets_forecast": {
+        "_note": "Keyrock/Dune report does NOT include a 2026+ industry forecast. Prior attribution of '$1.3T 2026' to Keyrock was misattributed and has been removed. Forward TAM in this project is derived from observed Nov-2025 run-rate × project-specific CAGR assumption, not from an external forecast.",
+        "ekg_us_sports_mature_annual_usd_low": 200000000000,
+        "ekg_us_sports_mature_annual_usd_high": 400000000000,
+        "ekg_notes": "Contingent on regulatory clarity. Supreme Court resolution unlikely before 2027. Source: InGame citing EKG report.",
+        "chamath_quote": "Over $6B in weekly trading volume, 100x growth in ~2 years (CoinCentral, informal)"
+    },
+
+    "tam_framework": {
+        "layer_1_sports_betting": {
+            "addressable_usd": 112000000000,
+            "pm_penetration_current_pct": 0.5,
+            "pm_penetration_2028_pct": 5,
+            "notes": "Prediction markets compete directly with sportsbooks at lower vig. 60%+ of Polymarket OI is sports."
+        },
+        "layer_2_financial_derivatives_retail": {
+            "addressable_usd": 2000000000000,
+            "pm_penetration_current_pct": 0.01,
+            "pm_penetration_2028_pct": 0.1,
+            "notes": "Event contracts as new product class. Fed decisions, earnings, macro."
+        },
+        "layer_3_information_sentiment": {
+            "addressable_usd": 10000000000,
+            "pm_penetration_current_pct": 1,
+            "pm_penetration_2028_pct": 10,
+            "notes": "ICE data thesis. Polymarket Signals & Sentiment as institutional product."
+        },
+        "total_addressable_at_maturity": "Conservative: $10-20B annual PM revenue. Aggressive: $50B+"
+    },
+
+    "public_co_revenue_reference": {
+        "draftkings_q2_2025_quarterly_usd": 1510000000,
+        "draftkings_yoy_growth_pct": 37,
+        "robinhood_event_trading_annual_usd": 300000000,
+        "robinhood_event_fastest_growing": true,
+        "source": "Coherent Market Insights citing DraftKings filing, ARK Invest estimate"
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "_last_updated": "2026-04-11",
+
+    "federal_status": {
+        "cftc_settlement_2022": {
+            "date": "2022-01",
+            "fine_usd": 1400000,
+            "outcome": "Polymarket agreed to pay fine and block US users",
+            "source": "CFTC records, Wikipedia"
+        },
+        "fbi_raid": {
+            "date": "2024-11-13",
+            "target": "CEO Shayne Coplan home",
+            "reason": "DOJ investigating whether Polymarket allowed US users on international platform",
+            "outcome": "DOJ and CFTC formally ended investigations Jul 2025 - declination notices issued",
+            "source": "Bloomberg, Wikipedia"
+        },
+        "qcex_acquisition": {
+            "date": "2025-07",
+            "cost_usd": 112000000,
+            "significance": "Acquired CFTC-licensed Designated Contract Exchange and clearinghouse",
+            "source": "startpolymarket.com"
+        },
+        "cftc_amended_order": {
+            "date": "2025-11",
+            "significance": "CFTC granted Amended Order of Designation - legal US operation",
+            "source": "startpolymarket.com"
+        },
+        "cftc_no_action_letter": {
+            "date": "2026-01",
+            "significance": "New CFTC chairman withdrew proposed rules restricting prediction markets",
+            "source": "TRM Labs report"
+        },
+        "cftc_vs_states": {
+            "date": "2026-04-03",
+            "description": "CFTC filed lawsuits against 3 states challenging their authority to regulate platforms like Kalshi",
+            "significance": "Federal government actively fighting for prediction market jurisdiction",
+            "source": "DeFi Rate"
+        }
+    },
+
+    "state_level_actions": {
+        "arizona": {
+            "action": "20 criminal counts against Kalshi",
+            "allegations": "Operating illegal gambling business, offering election wagering",
+            "date": "2026-03",
+            "source": "CoinDesk, Fortune"
+        },
+        "nevada": {
+            "action": "Civil complaint + ban on Kalshi",
+            "date": "2026-01",
+            "extended": "2026-04-03 (judge extended ban)",
+            "source": "DeFi Rate"
+        },
+        "tennessee": {
+            "action": "Cease-and-desist to Polymarket, Kalshi, and Crypto.com",
+            "scope": "Sports event contracts",
+            "source": "incrypted"
+        },
+        "total_active_lawsuits": 12,
+        "source": "The Block, DeFi Rate"
+    },
+
+    "federal_legislation": {
+        "bills_filed": "Multiple bills filed Mar 2026",
+        "scope": "Would restrict or ban prediction markets on sports, elections, war-related events",
+        "kentucky_bill": "Specifically carves out national prediction markets from sports-betting framework for licensed sportsbooks",
+        "supreme_court_timeline": "Unlikely before 2027 - key question is whether federal CFTC authorisation preempts state gambling regulation",
+        "source": "DL News, CNBC, EKG/InGame analysis"
+    },
+
+    "international_restrictions": {
+        "total_blocked_countries": 34,
+        "accessible_countries": 180,
+        "blocked_list": {
+            "major_markets": ["United States (international blocked; US exchange separate)", "United Kingdom", "France", "Germany", "Italy", "Netherlands", "Belgium"],
+            "recently_blocked": ["Argentina (Mar 2026)", "Portugal (Jan 2026)", "Spain"],
+            "close_only_mode": ["Poland", "Singapore", "Thailand", "Taiwan"],
+            "sanctioned": ["Russia", "Cuba", "Iran", "North Korea", "Syria"],
+            "other": ["Switzerland", "various"]
+        },
+        "enforcement_method": "IP-based geoblocking via dedicated geoblock API",
+        "no_kyc_on_international": true,
+        "source": "startpolymarket.com country guide, datawallet, Wikipedia"
+    },
+
+    "us_vs_international_volume": {
+        "us_exchange_daily_volume_usd": 94600000,
+        "total_daily_volume_usd": 290600000,
+        "us_pct_of_total": 8,
+        "us_exchange_status": "Invite-only, sports-only",
+        "us_full_launch_estimate": "Q3-Q4 2026",
+        "snapshot_date": "2026-04-10",
+        "source": "DeFi Rate prediction markets tracker"
+    },
+
+    "offshore_resilience_argument": {
+        "thesis": "Even if US regulatory picture deteriorates significantly, Polymarket has a vibrant offshore business generating >90% of volume. This mirrors the crypto industry pattern where global platforms thrive despite US restrictions.",
+        "precedents": [
+            {"platform": "Binance", "notes": "Largest crypto exchange globally despite US restrictions. Operates Binance.US as separate regulated entity."},
+            {"platform": "dYdX", "notes": "Moved to own appchain. US users restricted. Volume driven by global user base."},
+            {"platform": "Hyperliquid", "notes": "No US restrictions currently but primarily non-US user base. $15B/day volume."},
+            {"platform": "BitMEX", "notes": "Operated successfully for years serving non-US users despite no US access."}
+        ],
+        "key_point": "Polymarket's international platform in 180+ countries with no KYC is the core business. The US exchange is additive optionality, not the base case."
+    },
+
+    "integrity_incidents": {
+        "israeli_air_force": {
+            "description": "Multiple IAF members interrogated/indicted for betting on timing of Israeli strikes on Iran during Twelve Day War",
+            "profit_usd": 290000,
+            "quote": "Air force officer stated during interrogation: 'the entire squadron is on Polymarket, the entire air force is betting'",
+            "source": "Wikipedia (well-sourced from Israeli media)"
+        },
+        "maduro_ouster": {
+            "description": "Newly created account netted $400K+ from positions on Maduro being ousted and US actions in Venezuela",
+            "date": "2026-01",
+            "source": "Wikipedia, Fortune"
+        },
+        "journalist_harassment": {
+            "description": "Users with large bets on Iranian missile strike harassed Times of Israel journalist Emanuel Fabian to alter reporting",
+            "outcome": "Polymarket condemned behavior, banned involved users. RSF issued statement.",
+            "date": "2026-03",
+            "source": "Wikipedia, RSF statement"
+        },
+        "wash_trading": {
+            "columbia_study_pct": 25,
+            "peak_pct": 60,
+            "peak_date": "2024-12",
+            "current_estimate_pct": 15,
+            "source": "Columbia University researchers via Manifold"
+        }
+    }
+}

@@ -1,0 +1,163 @@
+{
+  "comp_panel_apr_2026": [
+    {
+      "name": "Flutter",
+      "basis": "EV",
+      "valuation": 28870000000.0,
+      "revenue": 16410000000.0,
+      "ev_sales": 1.8,
+      "group": "mature gambling"
+    },
+    {
+      "name": "DraftKings",
+      "basis": "EV",
+      "valuation": 11780000000.0,
+      "revenue": 6050000000.0,
+      "ev_sales": 1.9,
+      "group": "post-bubble sports"
+    },
+    {
+      "name": "Pump.fun",
+      "basis": "circ mcap",
+      "valuation": 1080000000.0,
+      "revenue": 490000000.0,
+      "ev_sales": 2.2,
+      "group": "crypto post-hype"
+    },
+    {
+      "name": "Coinbase",
+      "basis": "EV",
+      "valuation": 40590000000.0,
+      "revenue": 7180000000.0,
+      "ev_sales": 5.7,
+      "group": "crypto retail platform"
+    },
+    {
+      "name": "Nasdaq",
+      "basis": "EV",
+      "valuation": 56540000000.0,
+      "revenue": 8260000000.0,
+      "ev_sales": 6.8,
+      "group": "mature exchange"
+    },
+    {
+      "name": "Circle",
+      "basis": "EV",
+      "valuation": 19880000000.0,
+      "revenue": 2750000000.0,
+      "ev_sales": 7.2,
+      "group": "stablecoin issuer"
+    },
+    {
+      "name": "ICE",
+      "basis": "EV",
+      "valuation": 110450000000.0,
+      "revenue": 12640000000.0,
+      "ev_sales": 8.7,
+      "group": "mature exchange"
+    },
+    {
+      "name": "Hyperliquid",
+      "basis": "FDV",
+      "valuation": 42280000000.0,
+      "revenue": 900000000.0,
+      "ev_sales": 47.0,
+      "group": "crypto-native CLOB"
+    },
+    {
+      "name": "Robinhood",
+      "basis": "EV",
+      "valuation": 62380000000.0,
+      "revenue": 4470000000.0,
+      "ev_sales": 14.0,
+      "group": "retail trading platform"
+    },
+    {
+      "name": "Kalshi",
+      "basis": "last round",
+      "valuation": 22000000000.0,
+      "revenue": 263500000.0,
+      "ev_sales": 83.5,
+      "group": "direct private peer",
+      "note": "$22B round (Mar 2026); 2025 fee revenue $263.5M per press reports (Yahoo Finance, Apr 2026). Implied ~83\u00d7 TTM EV/Sales \u2014 hot-private category peak."
+    },
+    {
+      "name": "CME Group",
+      "basis": "EV",
+      "valuation": 107180000000.0,
+      "revenue": 6520000000.0,
+      "ev_sales": 16.4,
+      "group": "dominant mature exchange"
+    },
+    {
+      "name": "Tether",
+      "basis": "secondary",
+      "valuation": 200000000000.0,
+      "revenue": 12000000000.0,
+      "ev_sales": 16.7,
+      "group": "stablecoin issuer (float)"
+    }
+  ],
+  "per_world_equity_fdv": {
+    "Bear": {
+      "revenue_q1_2029": 203080800.0,
+      "multiples": {
+        "low": 5.0,
+        "mid": 10.0,
+        "high": 15.0,
+        "rationale": "Anchored on mature-exchange cluster: Coinbase 5.7\u00d7 (surviving-crypto-cycle), Nasdaq 6.8\u00d7, Circle 7.2\u00d7, ICE 8.7\u00d7, Pump.fun 2.2\u00d7 (distressed crypto-native). Bear Polymarket is a stagnating franchise priced like a mid-tier public exchange that failed to unlock mainstream retail. 10\u00d7 mid = CME/ICE-adjacent (mature dominant exchange but without growth premium). High 15\u00d7 caps at CME 16.4\u00d7 for a clean survive-and-grow outcome even without regulatory unlock.",
+        "anchor_comps": [
+          "Pump.fun 2.2\u00d7",
+          "Coinbase 5.7\u00d7",
+          "ICE 8.7\u00d7",
+          "Robinhood 14.0\u00d7",
+          "CME 16.4\u00d7"
+        ]
+      },
+      "equity_fdv_low": 1015404000.0,
+      "equity_fdv_mid": 2030808000.0,
+      "equity_fdv_high": 3046212000.0
+    },
+    "Base": {
+      "revenue_q1_2029": 1077978720.0,
+      "multiples": {
+        "low": 15.0,
+        "mid": 25.0,
+        "high": 35.0,
+        "rationale": "Anchored on growth-stage retail/prediction platforms with category-unlock underway: Coinbase 2021 peak (~20\u00d7 at comparable growth stage), Robinhood 14.0\u00d7 (scaled retail benchmark). Kalshi's current ~83\u00d7 TTM and Hyperliquid's ~47\u00d7 FDV sit well above this band \u2014 Base assumes Polymarket's multiple compresses closer to public-growth-stage comps as the category matures and hot-private/crypto-native premia fade. Base Polymarket under QCEX-unlock with sportsbook absorption prices like a growth-stage regulated exchange still compounding but past the private-market peak. Mid 25\u00d7 sits above current Coinbase/Robinhood. High 35\u00d7 reserves room for outperformance short of Bull category-definition.",
+        "anchor_comps": [
+          "Robinhood 14.0\u00d7",
+          "Coinbase 2021-peak ~20\u00d7",
+          "Kalshi ~83\u00d7 TTM (compresses out)",
+          "Hyperliquid ~47\u00d7 FDV (compresses out)",
+          "early-stage premium to 35\u00d7"
+        ]
+      },
+      "equity_fdv_low": 16169680800.0,
+      "equity_fdv_mid": 26949468000.0,
+      "equity_fdv_high": 37729255200.0
+    },
+    "Bull": {
+      "revenue_q1_2029": 1493393052.631579,
+      "multiples": {
+        "low": 30.0,
+        "mid": 50.0,
+        "high": 75.0,
+        "rationale": "Anchored on today's category-defining hot privates: Kalshi $22B round / $263.5M 2025 fee revenue = ~83\u00d7 TTM (per press reports Apr 2026), Hyperliquid $42.28B FDV / ~$900M revenue = ~47\u00d7 FDV. Bull Polymarket is the category-defining event-contract primitive 3 years out; exit multiple compresses from today's 47\u201383\u00d7 band toward 50\u00d7 mid as the category matures and public comps become relevant. Low 30\u00d7 floors at post-maturation public category-leader level. High 75\u00d7 just under today's Kalshi mark \u2014 a reasonable ceiling if Polymarket holds or displaces Kalshi's position. Single biggest driver of valuation dispersion.",
+        "anchor_comps": [
+          "Coinbase 2021-peak ~20\u00d7",
+          "Hyperliquid ~47\u00d7 FDV",
+          "Kalshi ~83\u00d7 TTM (Mar 2026 round)",
+          "75\u00d7 mid-high = modest compression off hot-private band"
+        ]
+      },
+      "equity_fdv_low": 44801791578.947365,
+      "equity_fdv_mid": 74669652631.57895,
+      "equity_fdv_high": 112004478947.36842
+    }
+  },
+  "ice_floor_anchor": {
+    "ev_usd": 2000000000,
+    "notes": "ICE investment at $2B implied is a FLOOR anchor (strategic investor transacted). Not a ceiling."
+  }
+}

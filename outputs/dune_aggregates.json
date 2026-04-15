@@ -1,0 +1,320 @@
+{
+  "monthly_volume": [
+    {
+      "month": "2024-10",
+      "volume_usdc": 2341243939.1445794,
+      "fills": 12025480
+    },
+    {
+      "month": "2024-11",
+      "volume_usdc": 2413817975.2919984,
+      "fills": 12518479
+    },
+    {
+      "month": "2024-12",
+      "volume_usdc": 1604510272.7783895,
+      "fills": 18039003
+    },
+    {
+      "month": "2025-01",
+      "volume_usdc": 925628626.2683991,
+      "fills": 10117833
+    },
+    {
+      "month": "2025-02",
+      "volume_usdc": 619607233.9003199,
+      "fills": 6305767
+    },
+    {
+      "month": "2025-03",
+      "volume_usdc": 592571008.856826,
+      "fills": 5918611
+    },
+    {
+      "month": "2025-04",
+      "volume_usdc": 654810805.283037,
+      "fills": 5753101
+    },
+    {
+      "month": "2025-05",
+      "volume_usdc": 853429298.581883,
+      "fills": 6751162
+    },
+    {
+      "month": "2025-06",
+      "volume_usdc": 803208423.2581922,
+      "fills": 6136357
+    },
+    {
+      "month": "2025-07",
+      "volume_usdc": 642774930.434231,
+      "fills": 7031650
+    },
+    {
+      "month": "2025-08",
+      "volume_usdc": 638889018.7218809,
+      "fills": 7156547
+    },
+    {
+      "month": "2025-09",
+      "volume_usdc": 993872996.870123,
+      "fills": 7850796
+    },
+    {
+      "month": "2025-10",
+      "volume_usdc": 2038158367.9627364,
+      "fills": 16761884
+    },
+    {
+      "month": "2025-11",
+      "volume_usdc": 2470242079.0499797,
+      "fills": 25135420
+    },
+    {
+      "month": "2025-12",
+      "volume_usdc": 2868614467.7014375,
+      "fills": 38073819
+    },
+    {
+      "month": "2026-01",
+      "volume_usdc": 4274628403.2224097,
+      "fills": 65399996
+    },
+    {
+      "month": "2026-02",
+      "volume_usdc": 4493045695.685921,
+      "fills": 96351967
+    },
+    {
+      "month": "2026-03",
+      "volume_usdc": 5982831665.662275,
+      "fills": 139633800
+    },
+    {
+      "month": "2026-04",
+      "volume_usdc": 2205167575.7757263,
+      "fills": 49847025
+    }
+  ],
+  "monthly_mau": [
+    {
+      "month": "2024-10-01 00:00:00+00:00",
+      "unique_makers": 234579,
+      "fills": 12025480
+    },
+    {
+      "month": "2024-11-01 00:00:00+00:00",
+      "unique_makers": 302130,
+      "fills": 12518479
+    },
+    {
+      "month": "2024-12-01 00:00:00+00:00",
+      "unique_makers": 355467,
+      "fills": 18039003
+    },
+    {
+      "month": "2025-01-01 00:00:00+00:00",
+      "unique_makers": 459568,
+      "fills": 10117833
+    },
+    {
+      "month": "2025-02-01 00:00:00+00:00",
+      "unique_makers": 416217,
+      "fills": 6305767
+    },
+    {
+      "month": "2025-03-01 00:00:00+00:00",
+      "unique_makers": 376273,
+      "fills": 5918611
+    },
+    {
+      "month": "2025-04-01 00:00:00+00:00",
+      "unique_makers": 324365,
+      "fills": 5753101
+    },
+    {
+      "month": "2025-05-01 00:00:00+00:00",
+      "unique_makers": 274296,
+      "fills": 6751162
+    },
+    {
+      "month": "2025-06-01 00:00:00+00:00",
+      "unique_makers": 234040,
+      "fills": 6136357
+    },
+    {
+      "month": "2025-07-01 00:00:00+00:00",
+      "unique_makers": 280125,
+      "fills": 7031650
+    },
+    {
+      "month": "2025-08-01 00:00:00+00:00",
+      "unique_makers": 222136,
+      "fills": 7156547
+    },
+    {
+      "month": "2025-09-01 00:00:00+00:00",
+      "unique_makers": 241782,
+      "fills": 7850796
+    },
+    {
+      "month": "2025-10-01 00:00:00+00:00",
+      "unique_makers": 465005,
+      "fills": 16761884
+    },
+    {
+      "month": "2025-11-01 00:00:00+00:00",
+      "unique_makers": 485174,
+      "fills": 25135420
+    },
+    {
+      "month": "2025-12-01 00:00:00+00:00",
+      "unique_makers": 499837,
+      "fills": 38073819
+    },
+    {
+      "month": "2026-01-01 00:00:00+00:00",
+      "unique_makers": 615026,
+      "fills": 65399996
+    },
+    {
+      "month": "2026-02-01 00:00:00+00:00",
+      "unique_makers": 638579,
+      "fills": 96351967
+    },
+    {
+      "month": "2026-03-01 00:00:00+00:00",
+      "unique_makers": 746927,
+      "fills": 139633800
+    },
+    {
+      "month": "2026-04-01 00:00:00+00:00",
+      "unique_makers": 423814,
+      "fills": 49855480
+    }
+  ],
+  "monthly_fees_usd": [
+    {
+      "month": "2024-10",
+      "fee_usdc_direct": 12.768634999999996,
+      "fee_outcome_raw": 54.572511000000006,
+      "fee_gross_usd": 37.87199006,
+      "refund_raw": 0.0,
+      "refund_usd": 0.0,
+      "fee_usd_total": 37.87199006
+    },
+    {
+      "month": "2024-11",
+      "fee_usdc_direct": 1.771433,
+      "fee_outcome_raw": 15.125355999999998,
+      "fee_gross_usd": 8.729096760000001,
+      "refund_raw": 0.0,
+      "refund_usd": 0.0,
+      "fee_usd_total": 8.729096760000001
+    },
+    {
+      "month": "2024-12",
+      "fee_usdc_direct": 11.833488999999998,
+      "fee_outcome_raw": 45.63288699999999,
+      "fee_gross_usd": 32.82461702,
+      "refund_raw": 0.0,
+      "refund_usd": 0.0,
+      "fee_usd_total": 32.82461702
+    },
+    {
+      "month": "2025-03",
+      "fee_usdc_direct": 0.0,
+      "fee_outcome_raw": 0.395,
+      "fee_gross_usd": 0.18170000000000003,
+      "refund_raw": 0.0,
+      "refund_usd": 0.0,
+      "fee_usd_total": 0.18170000000000003
+    },
+    {
+      "month": "2026-01",
+      "fee_usdc_direct": 4044964.008148924,
+      "fee_outcome_raw": 80553686.11376993,
+      "fee_gross_usd": 44231229.31928409,
+      "refund_raw": 79805076.0838478,
+      "refund_usd": 39812802.06285453,
+      "fee_usd_total": 4418427.2564295605
+    },
+    {
+      "month": "2026-02",
+      "fee_usdc_direct": 6719051.619476848,
+      "fee_outcome_raw": 178391395.64743346,
+      "fee_gross_usd": 95668345.10967031,
+      "refund_raw": 175291768.17979833,
+      "refund_usd": 87403761.1379838,
+      "fee_usd_total": 8264583.971686512
+    },
+    {
+      "month": "2026-03",
+      "fee_usdc_direct": 14021203.14557977,
+      "fee_outcome_raw": 360308015.4998246,
+      "fee_gross_usd": 190201599.82757086,
+      "refund_raw": 354335116.14299166,
+      "refund_usd": 173254180.70269734,
+      "fee_usd_total": 16947419.12487352
+    },
+    {
+      "month": "2026-04",
+      "fee_usdc_direct": 9500946.182322826,
+      "fee_outcome_raw": 246482116.67981604,
+      "fee_gross_usd": 119842275.71259996,
+      "refund_raw": 213259105.9077226,
+      "refund_usd": 95414709.12400623,
+      "fee_usd_total": 24427566.588593736
+    }
+  ],
+  "current_state": {
+    "anchor_month": "2026-03",
+    "volume_usdc_monthly": 5982831665.662275,
+    "fills_monthly": 139633800,
+    "mau_monthly": 746927,
+    "avg_trade_size_usd": 42.84658632553347,
+    "trades_per_user_month": 186.94437341266283,
+    "fee_gross_usd_monthly": 190201599.82757086,
+    "refund_usd_monthly": 173254180.70269734,
+    "fee_usd_total_monthly": 16947419.12487352,
+    "effective_gross_take_rate": 0.0317912337261985,
+    "effective_net_take_rate": 0.002832675240077561,
+    "arr_net_annualised": 203369029.49848223,
+    "notes": [
+      "Volume is single-sided notional (one row per fill across ctfexchange + negRiskCtfExchange).",
+      "Gross fees USD-equivalent = USDC-direct + outcome-token \u00d7 observed avg trade price.",
+      "Refunds = FeeRefunded events from both CTFExchange and NegRisk fee modules.",
+      "Refund mechanism: FeeCharged emits at ceiling rate; FeeRefunded recovers the difference",
+      "between ceiling and formula-derived true fee (p(1-p) adjustment + maker rebates).",
+      "~91% of gross is refunded across both exchanges (regular CTFExchange dominates by volume).",
+      "Net fees (fee_usd_total_monthly) = gross - refunds. This is true protocol revenue.",
+      "Cross-validated against DefiLlama fees/polymarket endpoint (within 2%).",
+      "Current P&L, cash balance, burn \u2014 UNKNOWN. Open diligence item."
+    ]
+  },
+  "growth_signals": {
+    "volume_trailing_6mo_mom_cagr_pct": 24.032007071106065,
+    "mau_trailing_6mo_mom_cagr_pct": 9.942120008574818,
+    "mau_months_with_decline_through_activations": 0,
+    "peak_volume_month": "2026-03",
+    "peak_volume_usd": 5982831665.662275,
+    "total_18mo_volume_usd": 37417052784.45035
+  },
+  "concentration_18mo": {
+    "top_10_share_of_18mo": 0.022462948221086992,
+    "top_100_share_of_18mo": 0.07914368951368134,
+    "top_1000_share_of_18mo": 0.19672372319132783,
+    "top_wallet_volume_usd": 230753786.29816693,
+    "top_wallet_trades": 7447
+  },
+  "fee_activations": {
+    "crypto": "2026-01-15",
+    "sports": "2026-02-18",
+    "politics": "2026-03-30",
+    "economics": "2026-03-30",
+    "finance": "2026-03-30",
+    "culture": "2026-03-30",
+    "tech": "2026-03-30",
+    "weather": "2026-03-30"
+  }
+}

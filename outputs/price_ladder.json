@@ -1,0 +1,287 @@
+{
+  "basis": "equity-only (no token / warrant layer); recommendation anchored on realised FDV at 3yr hold",
+  "target_hold_years": 3.0,
+  "ladder_realised_3yr": [
+    {
+      "entry_fdv": 2500000000,
+      "label": "$2.5B (ICE-level secondary)",
+      "expected_return_multiple": 10.359829656383273,
+      "p_clear_2x": 0.7058823529411764,
+      "p_clear_3x": 0.7058823529411764,
+      "p_clear_5x": 0.5980392156862745,
+      "p_clear_10x": 0.49019607843137253,
+      "recommendation_at_3x_hurdle": "AGGRESSIVE YES \u2014 plurality of worlds clear 3\u00d7"
+    },
+    {
+      "entry_fdv": 5000000000,
+      "label": "$5B (early secondary)",
+      "expected_return_multiple": 5.179914828191636,
+      "p_clear_2x": 0.7058823529411764,
+      "p_clear_3x": 0.5980392156862745,
+      "p_clear_5x": 0.49019607843137253,
+      "p_clear_10x": 0.12745098039215685,
+      "recommendation_at_3x_hurdle": "YES, CORE POSITION \u2014 majority-weighted clearance"
+    },
+    {
+      "entry_fdv": 7500000000,
+      "label": "$7.5B (recommended ceiling)",
+      "expected_return_multiple": 3.453276552127758,
+      "p_clear_2x": 0.5980392156862745,
+      "p_clear_3x": 0.49019607843137253,
+      "p_clear_5x": 0.2549019607843137,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "CONDITIONAL YES \u2014 size down; coin-flip territory"
+    },
+    {
+      "entry_fdv": 10000000000,
+      "label": "$10B (Jan 2026 secondary)",
+      "expected_return_multiple": 2.589957414095818,
+      "p_clear_2x": 0.49019607843137253,
+      "p_clear_3x": 0.2549019607843137,
+      "p_clear_5x": 0.12745098039215685,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "PASS unless token optionality materialises"
+    },
+    {
+      "entry_fdv": 12500000000,
+      "label": "$12.5B (speculative upper-range)",
+      "expected_return_multiple": 2.0719659312766545,
+      "p_clear_2x": 0.49019607843137253,
+      "p_clear_3x": 0.2549019607843137,
+      "p_clear_5x": 0.12745098039215685,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "PASS unless token optionality materialises"
+    },
+    {
+      "entry_fdv": 15000000000,
+      "label": "$15B (aggressive upper range)",
+      "expected_return_multiple": 1.726638276063879,
+      "p_clear_2x": 0.2549019607843137,
+      "p_clear_3x": 0.2549019607843137,
+      "p_clear_5x": 0,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "PASS unless token optionality materialises"
+    },
+    {
+      "entry_fdv": 20000000000,
+      "label": "$20B (rumoured March 2026 primary round)",
+      "expected_return_multiple": 1.294978707047909,
+      "p_clear_2x": 0.2549019607843137,
+      "p_clear_3x": 0.12745098039215685,
+      "p_clear_5x": 0,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "PASS \u2014 dominated bet"
+    },
+    {
+      "entry_fdv": 25000000000,
+      "label": "$25B (post-CFTC-clarity)",
+      "expected_return_multiple": 1.0359829656383273,
+      "p_clear_2x": 0.12745098039215685,
+      "p_clear_3x": 0,
+      "p_clear_5x": 0,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "PASS \u2014 dominated bet"
+    }
+  ],
+  "ladder_modelled": [
+    {
+      "entry_fdv": 2500000000,
+      "label": "$2.5B (ICE-level secondary)",
+      "expected_return_multiple": 15.5272301374613,
+      "p_clear_2x": 0.7058823529411764,
+      "p_clear_3x": 0.7058823529411764,
+      "p_clear_5x": 0.7058823529411764,
+      "p_clear_10x": 0.5980392156862745,
+      "recommendation_at_3x_hurdle": "AGGRESSIVE YES \u2014 plurality of worlds clear 3\u00d7"
+    },
+    {
+      "entry_fdv": 5000000000,
+      "label": "$5B (early secondary)",
+      "expected_return_multiple": 7.76361506873065,
+      "p_clear_2x": 0.7058823529411764,
+      "p_clear_3x": 0.7058823529411764,
+      "p_clear_5x": 0.5980392156862745,
+      "p_clear_10x": 0.2549019607843137,
+      "recommendation_at_3x_hurdle": "AGGRESSIVE YES \u2014 plurality of worlds clear 3\u00d7"
+    },
+    {
+      "entry_fdv": 7500000000,
+      "label": "$7.5B (recommended ceiling)",
+      "expected_return_multiple": 5.175743379153767,
+      "p_clear_2x": 0.7058823529411764,
+      "p_clear_3x": 0.5980392156862745,
+      "p_clear_5x": 0.49019607843137253,
+      "p_clear_10x": 0.12745098039215685,
+      "recommendation_at_3x_hurdle": "YES, CORE POSITION \u2014 majority-weighted clearance"
+    },
+    {
+      "entry_fdv": 10000000000,
+      "label": "$10B (Jan 2026 secondary)",
+      "expected_return_multiple": 3.881807534365325,
+      "p_clear_2x": 0.5980392156862745,
+      "p_clear_3x": 0.49019607843137253,
+      "p_clear_5x": 0.2549019607843137,
+      "p_clear_10x": 0.12745098039215685,
+      "recommendation_at_3x_hurdle": "CONDITIONAL YES \u2014 size down; coin-flip territory"
+    },
+    {
+      "entry_fdv": 12500000000,
+      "label": "$12.5B (speculative upper-range)",
+      "expected_return_multiple": 3.10544602749226,
+      "p_clear_2x": 0.5980392156862745,
+      "p_clear_3x": 0.49019607843137253,
+      "p_clear_5x": 0.2549019607843137,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "CONDITIONAL YES \u2014 size down; coin-flip territory"
+    },
+    {
+      "entry_fdv": 15000000000,
+      "label": "$15B (aggressive upper range)",
+      "expected_return_multiple": 2.5878716895768834,
+      "p_clear_2x": 0.49019607843137253,
+      "p_clear_3x": 0.2549019607843137,
+      "p_clear_5x": 0.12745098039215685,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "PASS unless token optionality materialises"
+    },
+    {
+      "entry_fdv": 20000000000,
+      "label": "$20B (rumoured March 2026 primary round)",
+      "expected_return_multiple": 1.9409037671826626,
+      "p_clear_2x": 0.38235294117647056,
+      "p_clear_3x": 0.2549019607843137,
+      "p_clear_5x": 0.12745098039215685,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "PASS unless token optionality materialises"
+    },
+    {
+      "entry_fdv": 25000000000,
+      "label": "$25B (post-CFTC-clarity)",
+      "expected_return_multiple": 1.55272301374613,
+      "p_clear_2x": 0.2549019607843137,
+      "p_clear_3x": 0.12745098039215685,
+      "p_clear_5x": 0,
+      "p_clear_10x": 0,
+      "recommendation_at_3x_hurdle": "PASS \u2014 dominated bet"
+    }
+  ],
+  "cells": {
+    "Bear__low": {
+      "world": "Bear",
+      "multiple_tag": "low",
+      "multiple": 5.0,
+      "revenue_q1_2029": 203080800.0,
+      "equity_fdv_modelled": 1015404000.0,
+      "equity_fdv_realised_3yr": 621427248.0,
+      "hold_years_weighted": 2.9250000000000003,
+      "joint_probability": 0.09803921568627451
+    },
+    "Bear__mid": {
+      "world": "Bear",
+      "multiple_tag": "mid",
+      "multiple": 10.0,
+      "revenue_q1_2029": 203080800.0,
+      "equity_fdv_modelled": 2030808000.0,
+      "equity_fdv_realised_3yr": 1242854496.0,
+      "hold_years_weighted": 2.9250000000000003,
+      "joint_probability": 0.09803921568627451
+    },
+    "Bear__high": {
+      "world": "Bear",
+      "multiple_tag": "high",
+      "multiple": 15.0,
+      "revenue_q1_2029": 203080800.0,
+      "equity_fdv_modelled": 3046212000.0,
+      "equity_fdv_realised_3yr": 1864281744.0000002,
+      "hold_years_weighted": 2.9250000000000003,
+      "joint_probability": 0.09803921568627451
+    },
+    "Base__low": {
+      "world": "Base",
+      "multiple_tag": "low",
+      "multiple": 15.0,
+      "revenue_q1_2029": 1077978720.0,
+      "equity_fdv_modelled": 16169680800.0,
+      "equity_fdv_realised_3yr": 11650950068.397089,
+      "hold_years_weighted": 3.675,
+      "joint_probability": 0.10784313725490197
+    },
+    "Base__mid": {
+      "world": "Base",
+      "multiple_tag": "mid",
+      "multiple": 25.0,
+      "revenue_q1_2029": 1077978720.0,
+      "equity_fdv_modelled": 26949468000.0,
+      "equity_fdv_realised_3yr": 19418250113.995144,
+      "hold_years_weighted": 3.675,
+      "joint_probability": 0.10784313725490197
+    },
+    "Base__high": {
+      "world": "Base",
+      "multiple_tag": "high",
+      "multiple": 35.0,
+      "revenue_q1_2029": 1077978720.0,
+      "equity_fdv_modelled": 37729255200.0,
+      "equity_fdv_realised_3yr": 27185550159.593204,
+      "hold_years_weighted": 3.675,
+      "joint_probability": 0.10784313725490197
+    },
+    "Bull__low": {
+      "world": "Bull",
+      "multiple_tag": "low",
+      "multiple": 30.0,
+      "revenue_q1_2029": 1493393052.631579,
+      "equity_fdv_modelled": 44801791578.947365,
+      "equity_fdv_realised_3yr": 29235761891.849556,
+      "hold_years_weighted": 4.6499999999999995,
+      "joint_probability": 0.12745098039215685
+    },
+    "Bull__mid": {
+      "world": "Bull",
+      "multiple_tag": "mid",
+      "multiple": 50.0,
+      "revenue_q1_2029": 1493393052.631579,
+      "equity_fdv_modelled": 74669652631.57895,
+      "equity_fdv_realised_3yr": 48726269819.74926,
+      "hold_years_weighted": 4.6499999999999995,
+      "joint_probability": 0.12745098039215685
+    },
+    "Bull__high": {
+      "world": "Bull",
+      "multiple_tag": "high",
+      "multiple": 75.0,
+      "revenue_q1_2029": 1493393052.631579,
+      "equity_fdv_modelled": 112004478947.36842,
+      "equity_fdv_realised_3yr": 73089404729.62389,
+      "hold_years_weighted": 4.6499999999999995,
+      "joint_probability": 0.12745098039215685
+    }
+  },
+  "what_has_to_be_true_rumored_round": {
+    "rumored_entry_fdv": 20000000000,
+    "source": "Reuters / Polymarket reporting March 2026",
+    "basis": "realised equity FDV at 3-year hold",
+    "target_realised_fdv_for_3x": 60000000000.0,
+    "cells_that_clear": {
+      "Bull__high": {
+        "world": "Bull",
+        "multiple_tag": "high",
+        "multiple": 75.0,
+        "revenue_q1_2029": 1493393052.631579,
+        "equity_fdv_modelled": 112004478947.36842,
+        "equity_fdv_realised_3yr": 73089404729.62389,
+        "hold_years_weighted": 4.6499999999999995,
+        "joint_probability": 0.12745098039215685
+      }
+    },
+    "aggregate_probability_clear_3x": 0.12745098039215685
+  },
+  "hurdles": {
+    "2x": 2.0,
+    "3x": 3.0,
+    "5x": 5.0,
+    "10x": 10.0
+  },
+  "probability_weighted_equity_fdv_modelled": 38818075343.65325,
+  "probability_weighted_equity_fdv_realised_3yr": 25899574140.958183
+}

@@ -1,0 +1,51 @@
+{
+  "high_relevance_only": {
+    "n": 17,
+    "rates": {
+      "shutdown_us": 0.17647058823529413,
+      "ongoing": 0.17647058823529413,
+      "restructured": 0.11764705882352941,
+      "fine_and_continue": 0.058823529411764705,
+      "geofence_and_continue": 0.11764705882352941,
+      "no_action": 0.29411764705882354,
+      "acquired": 0.058823529411764705
+    },
+    "counts": {
+      "shutdown_us": 3,
+      "ongoing": 3,
+      "restructured": 2,
+      "fine_and_continue": 1,
+      "geofence_and_continue": 2,
+      "no_action": 5,
+      "acquired": 1
+    }
+  },
+  "high_plus_medium": {
+    "n": 36,
+    "rates": {
+      "shutdown_us": 0.1111111111111111,
+      "ongoing": 0.08333333333333333,
+      "restructured": 0.2777777777777778,
+      "fine_and_continue": 0.1111111111111111,
+      "geofence_and_continue": 0.16666666666666666,
+      "no_action": 0.19444444444444445,
+      "acquired": 0.05555555555555555
+    },
+    "counts": {
+      "shutdown_us": 4,
+      "ongoing": 3,
+      "restructured": 10,
+      "fine_and_continue": 4,
+      "geofence_and_continue": 6,
+      "no_action": 7,
+      "acquired": 2
+    }
+  },
+  "notes": [
+    "Used as calibration for world-level regulatory-outcome probabilities.",
+    "Bear world assumption: weight shifts toward shutdown_us / geofence_and_continue.",
+    "Base world: weight on restructured / fine_and_continue / no_action.",
+    "Bull world: no_action / DCM-registration pathway dominates.",
+    "Explicit exclusion of FTX/Binance fraud cases \u2014 not an analogue for Polymarket's market conduct."
+  ]
+}

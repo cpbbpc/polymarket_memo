@@ -1,0 +1,93 @@
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+**/__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Memo rendering scaffolding — the PDF in outputs/ is the deliverable
+memo/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.secret
+
+# Superseded / archived local scratch
+data/_trade_chunks/
+data/_trade_chunks_prefee/
+data/trade_level.parquet
+data/trade_level_prefee.parquet
+data/user_positions.parquet
+data/_trades_cursor*.json
+data/dune/_superseded/
+
+# Large on-chain source parquets (regenerate via SQL in data/dune/queries/)
+data/dune/*.parquet
+data/dune/volume_by_day_token.csv
+data/dune/token_to_condition.csv
+data/dune/uploaded_token_categories.csv
+
+# Unused Dune CSV
+data/dune/withdrawal_events_monthly.csv
+
+# Superseded analysis scripts (not part of the memo pipeline)
+analysis/category_mix.py
+analysis/crypto_cycle_stress.py
+analysis/moat_stress.py
+analysis/multiple_stress.py
+analysis/risk_register.py
+analysis/world_probabilities.py
+
+# Outputs not consumed by the memo
+outputs/category_mix.json
+outputs/crypto_cycle_stress.json
+outputs/moat_stress.json
+outputs/risk_register.json
+outputs/world_probabilities.json
+outputs/tam.json
+outputs/memo.docx
+
+# Large API snapshots (not read by the memo pipeline)
+data/api_markets_snapshot.json
+data/kalshi_markets_snapshot.json
+
+# Research / supporting data not backing specific memo claims
+data/api_derived_metrics.json
+data/brand_metrics.json
+data/competitive_landscape.json
+data/comps.json
+data/comps_regression.json
+data/farming_analysis.json
+data/farming_presidential_analysis.json
+data/fee_ramp_extended.json
+data/funding_rounds.json
+data/hype_token.json
+data/kalshi_derived_metrics.json
+data/lit_token.json
+data/onchain_costs.json
+data/partnerships.json
+data/polymarket_volumes.json
+data/tam_decomposition.json
+data/token_category_map.json
+data/token_comps.json
+data/token_thesis.json
+
+# One-time data-collection scripts (source data for the research pool; not in pipeline)
+data/build_token_category_map.py
+data/collect_kalshi_api.py
+data/collect_polymarket_api.py
+
+# Internal planning docs
+docs/
+
+# Third-party report referenced but not redistributed (copyright)
+Prediction Markets, The Next Frontier of Financial Markets-1.pdf
+
+# Research tracker (internal)
+RESEARCH_MAP.md
