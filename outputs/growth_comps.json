@@ -1,0 +1,103 @@
+{
+  "method": "DraftKings-handle anchor + world scalars. DK handle 2021\u21922024 = 4.54\u00d7 (post-PASPA state-by-state unlock + DK breakthrough-to-scale: first $1B-revenue year to $4.77B) is the regulatory-unlock analogue. Bear = 1.00\u00d7 current volume (stagnation, no unlock). Base = 1.00\u00d7 DK handle multiple (one-for-one unlock). Bull = 1.25\u00d7 DK handle multiple (unlock + category-creation premium). TTM revenue averages final 12 months before Q1 2029 endpoint (~87% of endpoint-annualised).",
+  "primary_anchor": {
+    "source": "DraftKings 10-K handle disclosure",
+    "anchor_year": 2021,
+    "anchor_handle_b": 11.4,
+    "y3_handle_b": 51.8,
+    "three_year_multiple": 4.544,
+    "note": "DraftKings 10-K handle disclosure. 2021\u21922024 window chosen because it combines (a) continuing state-by-state regulatory unlock post-PASPA and (b) DK's breakthrough-to-scale phase (2021 is first $1B-revenue year at $1.30B, reaching $4.77B by 2024). Captures regulatory-unlock-plus-scale-breakthrough regime Polymarket enters post-QCEX. Milestones: NY online launch Jan 2022, OH/MA/KY 2023, NC/VT 2024. 3y handle multiple = 51.8 / 11.4 = 4.54\u00d7."
+  },
+  "reference_comps": {
+    "Robinhood_rev": {
+      "anchor_year": 2020,
+      "anchor_rev_m": 959,
+      "series_rev_m": [
+        [
+          1,
+          1815
+        ],
+        [
+          2,
+          1358
+        ],
+        [
+          3,
+          1865
+        ],
+        [
+          4,
+          2954
+        ]
+      ],
+      "note": "Retail-trading revenue. Dominated by meme-stock cycle (2020\u201321) and interest-income expansion (2022\u201323) \u2014 does not transfer to Polymarket's regulatory-unlock thesis. Retained for reference only."
+    },
+    "Flutter_rev": {
+      "anchor_year": 2018,
+      "anchor_rev_m": 2200,
+      "series_rev_m": [
+        [
+          1,
+          2530
+        ],
+        [
+          2,
+          5130
+        ],
+        [
+          3,
+          7990
+        ]
+      ],
+      "note": "Global sportsbook revenue. 2020 M&A-contaminated (Stars Group). Retained for reference only."
+    }
+  },
+  "world_scalars": {
+    "Bear": {
+      "type": "current_multiplier",
+      "value": 1.0,
+      "rationale": "Status quo. Regulation fails to unlock, Polymarket stagnates at roughly current run rate."
+    },
+    "Base": {
+      "type": "dk_handle_multiplier",
+      "value": 1.0,
+      "rationale": "One-for-one DraftKings regulatory-unlock analogue. QCEX launch + state resolution replicates state-by-state sports legalisation dynamic."
+    },
+    "Bull": {
+      "type": "dk_handle_multiplier",
+      "value": 1.25,
+      "rationale": "Same regulatory-unlock spine as Base plus a 1.25\u00d7 category-creation premium reflecting Polymarket becoming the category-defining event-contract primitive with institutional hedging adoption."
+    }
+  },
+  "polymarket_anchor_monthly_usd": 5980000000.0,
+  "polymarket_projections": {
+    "Bear": {
+      "scalar_type": "current_multiplier",
+      "scalar_value": 1.0,
+      "anchor_description": "1.00\u00d7 current PM volume",
+      "endpoint_multiple_vs_current": 1.0,
+      "monthly_volume_q1_2029_usd": 5980000000.0,
+      "ttm_volume_q1_2029_usd": 71760000000.0,
+      "rationale": "Status quo. Regulation fails to unlock, Polymarket stagnates at roughly current run rate."
+    },
+    "Base": {
+      "scalar_type": "dk_handle_multiplier",
+      "scalar_value": 1.0,
+      "anchor_description": "1.00\u00d7 DK 3y handle multiple (4.54\u00d7 \u2192 4.54\u00d7 net)",
+      "endpoint_multiple_vs_current": 4.5438596491228065,
+      "monthly_volume_q1_2029_usd": 27172280701.754383,
+      "ttm_volume_q1_2029_usd": 283678610526.3158,
+      "rationale": "One-for-one DraftKings regulatory-unlock analogue. QCEX launch + state resolution replicates state-by-state sports legalisation dynamic."
+    },
+    "Bull": {
+      "scalar_type": "dk_handle_multiplier",
+      "scalar_value": 1.25,
+      "anchor_description": "1.25\u00d7 DK 3y handle multiple (4.54\u00d7 \u2192 5.68\u00d7 net)",
+      "endpoint_multiple_vs_current": 5.6798245614035086,
+      "monthly_volume_q1_2029_usd": 33965350877.19298,
+      "ttm_volume_q1_2029_usd": 354598263157.8947,
+      "rationale": "Same regulatory-unlock spine as Base plus a 1.25\u00d7 category-creation premium reflecting Polymarket becoming the category-defining event-contract primitive with institutional hedging adoption."
+    }
+  },
+  "ttm_ramp_factor": 0.87
+}

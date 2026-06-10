@@ -1,0 +1,268 @@
+{
+  "basis": "equity-only (token not modelled; see memo \u00a73.3)",
+  "method": "Per-world distribution over equity exit paths (M&A, secondary, IPO, wind-down); each path has a realisable multiple on modelled equity FDV (world-dependent for strategic) and a median hold period. Realised FDV at 3-year and 5-year hold computed. Cells = (world, low/mid/high multiple).",
+  "realised_multiple_on_fdv": {
+    "Bear": {
+      "strategic_acquisition": 0.72,
+      "secondary_sale": 0.8,
+      "ipo": 1.0,
+      "wind_down": 0.08
+    },
+    "Base": {
+      "strategic_acquisition": 0.85,
+      "secondary_sale": 0.8,
+      "ipo": 1.0,
+      "wind_down": 0.08
+    },
+    "Bull": {
+      "strategic_acquisition": 0.95,
+      "secondary_sale": 0.8,
+      "ipo": 1.0,
+      "wind_down": 0.08
+    }
+  },
+  "hold_years_median": {
+    "strategic_acquisition": 3.5,
+    "secondary_sale": 2.0,
+    "ipo": 6.0,
+    "wind_down": 2.5
+  },
+  "path_notes": {
+    "strategic_acquisition": "ICE most-likely acquirer ($2B anchor); possible bidders CME, NYSE, Nasdaq, Flutter. Bear = ICE-anchored compressed bid (0.72\u00d7); Bull = competitive bidding approaching IPO mark (0.95\u00d7).",
+    "secondary_sale": "Late-stage secondary to new institutional round (SoftBank-style). Fastest liquidity, ~25% discount to last round.",
+    "ipo": "Requires revenue \u2265$1B, CFTC clarity, mature operating metrics. 6yr hold reflects S-1 prep + two clean audited years from Q1 2029 ARR base.",
+    "wind_down": "Regulatory adverse outcome forcing US/EU geofence escalation; franchise impairment on a growth-priced Q1 2029 mark."
+  },
+  "world_exit_distribution": {
+    "Bear": {
+      "strategic_acquisition": 0.55,
+      "secondary_sale": 0.25,
+      "ipo": 0.0,
+      "wind_down": 0.2,
+      "rationale": "Regulatory compression \u2192 strategic acquirer (likely ICE at compressed price) or slow decline. No IPO path."
+    },
+    "Base": {
+      "strategic_acquisition": 0.3,
+      "secondary_sale": 0.35,
+      "ipo": 0.3,
+      "wind_down": 0.05,
+      "rationale": "Multiple paths viable. Secondary most likely near-term; IPO feasible 5\u20136yr out given CFTC clarity."
+    },
+    "Bull": {
+      "strategic_acquisition": 0.15,
+      "secondary_sale": 0.2,
+      "ipo": 0.6,
+      "wind_down": 0.05,
+      "rationale": "Bull means prediction markets are a financial primitive worth public listing. IPO dominant; ICE-ceiling concern evaporates (bidding competition)."
+    }
+  },
+  "per_world_summary": {
+    "Bear": {
+      "realised_multiple_on_modelled_fdv": 0.6120000000000001,
+      "hold_years_weighted": 2.9250000000000003,
+      "dominant_path": "strategic_acquisition"
+    },
+    "Base": {
+      "realised_multiple_on_modelled_fdv": 0.839,
+      "hold_years_weighted": 3.675,
+      "dominant_path": "secondary_sale"
+    },
+    "Bull": {
+      "realised_multiple_on_modelled_fdv": 0.9065,
+      "hold_years_weighted": 4.6499999999999995,
+      "dominant_path": "ipo"
+    }
+  },
+  "at_3_year_hold": {
+    "cells": {
+      "Bear__low": {
+        "world": "Bear",
+        "multiple_tag": "low",
+        "multiple": 5.0,
+        "joint_probability": 0.09803921568627451,
+        "equity_fdv_modelled": 1015404000.0,
+        "equity_realised_fdv": 621427248.0,
+        "hold_years_weighted": 2.9250000000000003,
+        "realised_at_target": 621427248.0
+      },
+      "Bear__mid": {
+        "world": "Bear",
+        "multiple_tag": "mid",
+        "multiple": 10.0,
+        "joint_probability": 0.09803921568627451,
+        "equity_fdv_modelled": 2030808000.0,
+        "equity_realised_fdv": 1242854496.0,
+        "hold_years_weighted": 2.9250000000000003,
+        "realised_at_target": 1242854496.0
+      },
+      "Bear__high": {
+        "world": "Bear",
+        "multiple_tag": "high",
+        "multiple": 15.0,
+        "joint_probability": 0.09803921568627451,
+        "equity_fdv_modelled": 3046212000.0,
+        "equity_realised_fdv": 1864281744.0000002,
+        "hold_years_weighted": 2.9250000000000003,
+        "realised_at_target": 1864281744.0000002
+      },
+      "Base__low": {
+        "world": "Base",
+        "multiple_tag": "low",
+        "multiple": 15.0,
+        "joint_probability": 0.10784313725490197,
+        "equity_fdv_modelled": 16169680800.0,
+        "equity_realised_fdv": 13566362191.2,
+        "hold_years_weighted": 3.675,
+        "realised_at_target": 11650950068.397089
+      },
+      "Base__mid": {
+        "world": "Base",
+        "multiple_tag": "mid",
+        "multiple": 25.0,
+        "joint_probability": 0.10784313725490197,
+        "equity_fdv_modelled": 26949468000.0,
+        "equity_realised_fdv": 22610603652.0,
+        "hold_years_weighted": 3.675,
+        "realised_at_target": 19418250113.995144
+      },
+      "Base__high": {
+        "world": "Base",
+        "multiple_tag": "high",
+        "multiple": 35.0,
+        "joint_probability": 0.10784313725490197,
+        "equity_fdv_modelled": 37729255200.0,
+        "equity_realised_fdv": 31654845112.8,
+        "hold_years_weighted": 3.675,
+        "realised_at_target": 27185550159.593204
+      },
+      "Bull__low": {
+        "world": "Bull",
+        "multiple_tag": "low",
+        "multiple": 30.0,
+        "joint_probability": 0.12745098039215685,
+        "equity_fdv_modelled": 44801791578.947365,
+        "equity_realised_fdv": 40612824066.31579,
+        "hold_years_weighted": 4.6499999999999995,
+        "realised_at_target": 29235761891.849556
+      },
+      "Bull__mid": {
+        "world": "Bull",
+        "multiple_tag": "mid",
+        "multiple": 50.0,
+        "joint_probability": 0.12745098039215685,
+        "equity_fdv_modelled": 74669652631.57895,
+        "equity_realised_fdv": 67688040110.52631,
+        "hold_years_weighted": 4.6499999999999995,
+        "realised_at_target": 48726269819.74926
+      },
+      "Bull__high": {
+        "world": "Bull",
+        "multiple_tag": "high",
+        "multiple": 75.0,
+        "joint_probability": 0.12745098039215685,
+        "equity_fdv_modelled": 112004478947.36842,
+        "equity_realised_fdv": 101532060165.78947,
+        "hold_years_weighted": 4.6499999999999995,
+        "realised_at_target": 73089404729.62389
+      }
+    },
+    "probability_weighted_realised_fdv_at_target": 25899574140.958183,
+    "target_hold_years": 3.0
+  },
+  "at_5_year_hold": {
+    "cells": {
+      "Bear__low": {
+        "world": "Bear",
+        "multiple_tag": "low",
+        "multiple": 5.0,
+        "joint_probability": 0.09803921568627451,
+        "equity_fdv_modelled": 1015404000.0,
+        "equity_realised_fdv": 621427248.0,
+        "hold_years_weighted": 2.9250000000000003,
+        "realised_at_target": 621427248.0
+      },
+      "Bear__mid": {
+        "world": "Bear",
+        "multiple_tag": "mid",
+        "multiple": 10.0,
+        "joint_probability": 0.09803921568627451,
+        "equity_fdv_modelled": 2030808000.0,
+        "equity_realised_fdv": 1242854496.0,
+        "hold_years_weighted": 2.9250000000000003,
+        "realised_at_target": 1242854496.0
+      },
+      "Bear__high": {
+        "world": "Bear",
+        "multiple_tag": "high",
+        "multiple": 15.0,
+        "joint_probability": 0.09803921568627451,
+        "equity_fdv_modelled": 3046212000.0,
+        "equity_realised_fdv": 1864281744.0000002,
+        "hold_years_weighted": 2.9250000000000003,
+        "realised_at_target": 1864281744.0000002
+      },
+      "Base__low": {
+        "world": "Base",
+        "multiple_tag": "low",
+        "multiple": 15.0,
+        "joint_probability": 0.10784313725490197,
+        "equity_fdv_modelled": 16169680800.0,
+        "equity_realised_fdv": 13566362191.2,
+        "hold_years_weighted": 3.675,
+        "realised_at_target": 13566362191.2
+      },
+      "Base__mid": {
+        "world": "Base",
+        "multiple_tag": "mid",
+        "multiple": 25.0,
+        "joint_probability": 0.10784313725490197,
+        "equity_fdv_modelled": 26949468000.0,
+        "equity_realised_fdv": 22610603652.0,
+        "hold_years_weighted": 3.675,
+        "realised_at_target": 22610603652.0
+      },
+      "Base__high": {
+        "world": "Base",
+        "multiple_tag": "high",
+        "multiple": 35.0,
+        "joint_probability": 0.10784313725490197,
+        "equity_fdv_modelled": 37729255200.0,
+        "equity_realised_fdv": 31654845112.8,
+        "hold_years_weighted": 3.675,
+        "realised_at_target": 31654845112.8
+      },
+      "Bull__low": {
+        "world": "Bull",
+        "multiple_tag": "low",
+        "multiple": 30.0,
+        "joint_probability": 0.12745098039215685,
+        "equity_fdv_modelled": 44801791578.947365,
+        "equity_realised_fdv": 40612824066.31579,
+        "hold_years_weighted": 4.6499999999999995,
+        "realised_at_target": 40612824066.31579
+      },
+      "Bull__mid": {
+        "world": "Bull",
+        "multiple_tag": "mid",
+        "multiple": 50.0,
+        "joint_probability": 0.12745098039215685,
+        "equity_fdv_modelled": 74669652631.57895,
+        "equity_realised_fdv": 67688040110.52631,
+        "hold_years_weighted": 4.6499999999999995,
+        "realised_at_target": 67688040110.52631
+      },
+      "Bull__high": {
+        "world": "Bull",
+        "multiple_tag": "high",
+        "multiple": 75.0,
+        "joint_probability": 0.12745098039215685,
+        "equity_fdv_modelled": 112004478947.36842,
+        "equity_realised_fdv": 101532060165.78947,
+        "hold_years_weighted": 4.6499999999999995,
+        "realised_at_target": 101532060165.78947
+      }
+    },
+    "probability_weighted_realised_fdv_at_target": 34424152665.19814,
+    "target_hold_years": 5.0
+  }
+}

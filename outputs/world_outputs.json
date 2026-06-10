@@ -1,0 +1,93 @@
+{
+  "worlds": [
+    {
+      "name": "Bear",
+      "probability": 0.29411764705882354,
+      "narrative": "Regulation fails to unlock. CFTC loss at Supreme Court OR state-AG cascade OR adverse AZ criminal verdict keeps Polymarket geofenced; QCEX launches late or narrow. No category inflection \u2014 the platform runs broadly at current scale with the existing user base. Volume stagnates at ~$6B/mo; category mix holds roughly at observed March 2026 levels; net take stays near observed 0.28% post-refund.",
+      "regulatory_assumption": "1+ of: CFTC loss, state-AG cascade, AZ criminal verdict. Base rate: shutdown_us (12.5%) + geofence (12.5%) = 25% floor for adverse outcomes.",
+      "drivers_q1_2029": {
+        "volume_monthly_usd": 5980000000.0,
+        "ttm_volume_annual_usd": 71760000000.0,
+        "mau": 746927.0,
+        "fee_bearing_share": 0.895,
+        "net_take_rate": 0.00283,
+        "data_and_clearing_revenue": 0.0
+      },
+      "revenue_q1_2029": 203080800.0,
+      "probability_sources": [
+        "regulatory base rate 25% floor",
+        "state AG momentum (12+ states, AZ criminal)",
+        "competitive pressure from Kalshi post-CFTC"
+      ]
+    },
+    {
+      "name": "Base",
+      "probability": 0.3235294117647059,
+      "narrative": "Execution holds. CFTC clarity without retail restriction. QCEX launches Q3-Q4 2026. Fee ramp stays (observed no volume attrition through activations). Polymarket retains share in crypto/news/politics. Robinhood/ICE partners. Volume 4.54\u00d7 from current (~$27.2B/mo by Q1 2029), tracking DraftKings' 2021\u20132024 handle growth \u2014 a combined regulatory-unlock (continuing post-PASPA state-by-state legalisation) and breakthrough-to-scale (DK's first $1B-revenue year onward to $4.77B) analogue for the regime Polymarket enters post-QCEX.",
+      "regulatory_assumption": "CFTC wins or settles; QCEX operates as registered venue. Base-rate cluster: restructured + fine_and_continue + favorable-ongoing = ~62%.",
+      "drivers_q1_2029": {
+        "volume_monthly_usd": 27172280701.754383,
+        "ttm_volume_annual_usd": 283678610526.3158,
+        "mau": 3734635.0,
+        "fee_bearing_share": 0.917,
+        "net_take_rate": 0.0038,
+        "data_and_clearing_revenue": 0.0
+      },
+      "revenue_q1_2029": 1077978720.0,
+      "probability_sources": [
+        "Kalshi CFTC DC Circuit win establishes event-contract precedent",
+        "CFTC leadership signals pro-market (Pham chair)",
+        "ICE investment = strategic legitimisation",
+        "observed: MAU grew through all three fee activations, not down"
+      ]
+    },
+    {
+      "name": "Bull",
+      "probability": 0.38235294117647056,
+      "narrative": "Prediction markets as financial primitive. ICE institutional distribution activates. Data/derivatives licensing becomes real. 2028 election supercycle drives non-sports volume sustained. Token launches with credible value capture. International TAM expands materially. Volume 5.68\u00d7 from current (~$34.0B/mo by Q1 2029).",
+      "regulatory_assumption": "CFTC clarity + federal preemption of state actions. Base-rate upside: no_action (12.5%) + favorable-restructured outcomes.",
+      "drivers_q1_2029": {
+        "volume_monthly_usd": 33965350877.19298,
+        "ttm_volume_annual_usd": 354598263157.8947,
+        "mau": 5228489.0,
+        "fee_bearing_share": 0.93,
+        "net_take_rate": 0.004,
+        "data_and_clearing_revenue": 75000000.0
+      },
+      "revenue_q1_2029": 1493393052.631579,
+      "probability_sources": [
+        "structural primitive hypothesis (Coplan-led execution)",
+        "ICE distribution activation (rumoured, not yet public)",
+        "2028 US presidential cycle \u2014 observed 2024 peak was $450M/mo at 78k MAU",
+        "growth signals: MAU 14%/mo, volume 28%/mo over last 6mo"
+      ]
+    }
+  ],
+  "prob_weighted_revenue_q1_2029": 979490694.241486,
+  "probability_sum": 1.0,
+  "current_anchor": {
+    "anchor_month": "2026-03",
+    "volume_usdc_monthly": 5982831665.662275,
+    "fills_monthly": 139633800,
+    "mau_monthly": 746927,
+    "avg_trade_size_usd": 42.84658632553347,
+    "trades_per_user_month": 186.94437341266283,
+    "fee_gross_usd_monthly": 190201599.82757086,
+    "refund_usd_monthly": 173254180.70269734,
+    "fee_usd_total_monthly": 16947419.12487352,
+    "effective_gross_take_rate": 0.0317912337261985,
+    "effective_net_take_rate": 0.002832675240077561,
+    "arr_net_annualised": 203369029.49848223,
+    "notes": [
+      "Volume is single-sided notional (one row per fill across ctfexchange + negRiskCtfExchange).",
+      "Gross fees USD-equivalent = USDC-direct + outcome-token \u00d7 observed avg trade price.",
+      "Refunds = FeeRefunded events from both CTFExchange and NegRisk fee modules.",
+      "Refund mechanism: FeeCharged emits at ceiling rate; FeeRefunded recovers the difference",
+      "between ceiling and formula-derived true fee (p(1-p) adjustment + maker rebates).",
+      "~91% of gross is refunded across both exchanges (regular CTFExchange dominates by volume).",
+      "Net fees (fee_usd_total_monthly) = gross - refunds. This is true protocol revenue.",
+      "Cross-validated against DefiLlama fees/polymarket endpoint (within 2%).",
+      "Current P&L, cash balance, burn \u2014 UNKNOWN. Open diligence item."
+    ]
+  }
+}
